@@ -1,0 +1,41 @@
+name: EdgeSTT
+version: "1.0.0"
+slug: edgestt
+description: Local streaming speech-to-text for Assist (NVIDIA Nemotron 3.5 ASR, Wyoming), 9 languages
+url: https://github.com/Lucapgt/edgedecision
+arch:
+  - aarch64
+  - amd64
+startup: services
+boot: auto
+discovery:
+  - wyoming
+hassio_api: true
+ports:
+  10300/tcp: 10300
+ports_description:
+  10300/tcp: Wyoming STT
+map:
+  - share:rw
+options:
+  chunk_ms: "560"
+  language: it
+  threads: 4
+  lead_padding_ms: 300
+  tail_padding_ms: 300
+  model_dir: ""
+  log_transcripts: true
+  save_audio: false
+  blank_penalty: 0
+  debug: false
+schema:
+  chunk_ms: list(560|1120)
+  language: list(it|en|es|fr|de|nl|pt|pl|sv|auto)
+  threads: int(1,4)
+  lead_padding_ms: int(0,2000)
+  tail_padding_ms: int(0,3000)
+  model_dir: str?
+  log_transcripts: bool
+  save_audio: bool
+  blank_penalty: float(0,5)
+  debug: bool

@@ -1,0 +1,26 @@
+{
+  "max_len": 128,
+  "q_max_len": 48,
+  "pad_id": 1,
+  "pad_token": "<pad>",
+  "emb_dim": 256,
+  "query_types": [
+    "DEVICE",
+    "OUT_OF_DOMAIN",
+    "COMPLEX",
+    "NOOP",
+    "CONFIRM",
+    "HISTORY"
+  ],
+  "uses_token_type": false,
+  "base_model": "intfloat/multilingual-e5-small",
+  "layers": 6,
+  "source": "runs\\e5s-6L\\best",
+  "word_tags": [
+    "O",
+    "CMD",
+    "OBJ",
+    "VAL",
+    "SEP"
+  ]
+}

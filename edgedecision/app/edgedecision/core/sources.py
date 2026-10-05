@@ -1,0 +1,31 @@
+"""Spoken names of TV inputs / apps -> the usual source name ("la tdt", "il digitale terrestre" -> "TV"). The device's own
+source list decides in the end (params.match_source); generated from data/r7/<lang>.py SOURCES."""
+
+SOURCE_ALIASES = {
+    'ARD Mediathek': ['ard mediathek'],
+    'BBC iPlayer': ['bbc iplayer'],
+    'Box': ['boxen'],
+    'Box TV': ['box'],
+    'Cable': ['cable box'],
+    'Canal+': ['canal plus'],
+    'Decoder': ['dekoder', 'settopbox'],
+    'Decodificador': ['deco'],
+    'Disney+': ['disney plus'],
+    'France.tv': ['france tv'],
+    'HDMI 1': ['hdmi 1', "l' hdmi 1"],
+    'HDMI 2': ['hdmi 2'],
+    'MEO': ['box da meo'],
+    'Movistar+': ['movistar plus'],
+    'NPO Start': ['npo start'],
+    'Netflix': ['netflixa'],
+    'PlayStation': ['play', 'plejke'],
+    'Player': ['playera'],
+    'Prime Video': ['prime video'],
+    'RTP Play': ['rtp play'],
+    'SVT Play': ['svt play'],
+    'Sport TV': ['sport tv'],
+    'TV': ['digitale terrestre', 'fernsehen', 'gewone tv', 'kablowke', 'live tv', 'tdt', 'tele', 'televisao normal', 'telewizje', 'tnt', 'tv n', 'vanlig tv'],
+    'TV4 Play': ['tv4 play'],
+    'TVP VOD': ['tvp vod'],
+    'waipu.tv': ['waipu'],
+}

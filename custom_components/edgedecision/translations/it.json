@@ -1,0 +1,38 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "EdgeDecision",
+        "description": "Motore locale per i comandi vocali (add-on EdgeDecision). L'indirizzo viene compilato da solo se l'add-on è avviato.",
+        "data": {
+          "url": "Indirizzo dell'add-on",
+          "fallback_agent": "Agente per le frasi che EdgeDecision non gestisce (condizioni, domande, chiacchiere)",
+          "model": "Modello",
+          "execute": "Esegui i comandi (spento = decide e risponde soltanto)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "L'add-on EdgeDecision non risponde a questo indirizzo. È avviato in modalità homeassistant?"
+    },
+    "abort": {
+      "single_instance_allowed": "EdgeDecision è già configurato."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "EdgeDecision",
+        "data": {
+          "url": "Indirizzo dell'add-on",
+          "fallback_agent": "Agente per le frasi che EdgeDecision non gestisce (condizioni, domande, chiacchiere)",
+          "model": "Modello",
+          "execute": "Esegui i comandi (spento = decide e risponde soltanto)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "L'add-on EdgeDecision non risponde a questo indirizzo."
+    }
+  }
+}

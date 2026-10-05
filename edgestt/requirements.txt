@@ -1,0 +1,3 @@
+sherpa-onnx==1.13.8
+wyoming==1.10.2
+numpy

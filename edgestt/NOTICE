@@ -1,0 +1,36 @@
+EdgeSTT add-on
+==============
+
+This add-on does not contain model weights. On first start it downloads a model
+published by third parties. The model and the software below remain under
+their own licenses.
+
+Model
+-----
+NVIDIA Nemotron 3.5 ASR Streaming 0.6B
+Copyright (c) NVIDIA Corporation.
+Licensed under the OpenMDW License Agreement, version 1.1 (OpenMDW-1.1).
+Model card: https://huggingface.co/nvidia/nemotron-3.5-asr-streaming-0.6b
+License text: LICENSE-OpenMDW-1.1.txt (official text from
+https://github.com/OpenMDW/OpenMDW/blob/main/1.1/LICENSE.OpenMDW-1.1,
+also published at https://openmdw.ai/license/1-1/)
+
+ONNX INT8 export of the model
+-----------------------------
+sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11 and
+sherpa-onnx-nemotron-3.5-asr-streaming-0.6b-1120ms-int8-2026-06-11,
+exported and published by the k2-fsa / sherpa-onnx project:
+https://github.com/k2-fsa/sherpa-onnx/releases/tag/asr-models
+The exported model is derived from the NVIDIA model above and is subject to
+OpenMDW-1.1.
+
+Software used at run time (installed from PyPI when the add-on is built)
+------------------------------------------------------------------------
+sherpa-onnx  - Apache License 2.0 - https://github.com/k2-fsa/sherpa-onnx
+wyoming      - MIT License        - https://github.com/OHF-Voice/wyoming
+numpy        - BSD 3-Clause       - https://numpy.org
+Base image python:3.11-slim-bookworm - Python Software Foundation License and
+the licenses of the included Debian packages.
+
+NVIDIA and Nemotron are trademarks of NVIDIA Corporation. Their use here only
+identifies the origin of the model and does not imply endorsement.

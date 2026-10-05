@@ -1,0 +1,36 @@
+{
+  "temperature": 1.4496660644860482,
+  "type_temperature": 1.3129738415384755,
+  "exec_prob": {
+    "none": 0.7,
+    "low": 0.85,
+    "medium": 0.95,
+    "high": 0.97
+  },
+  "exec_margin": {
+    "none": 0.0,
+    "low": 0.05,
+    "medium": 0.16999999999999998,
+    "high": 0.25
+  },
+  "amb_ratio": 0.3,
+  "amb_min_prob": 0.12,
+  "member_tie": 1.01,
+  "member_mode": "auto",
+  "member_ratio": 0.6,
+  "complex_rules": true,
+  "scene_keep": 0.9,
+  "complex_override": 0.6,
+  "noop_override": 0.6,
+  "ood_override": 0.7,
+  "ood_policy": "ESCALATE",
+  "confirm_high_risk": true,
+  "top_k": 12,
+  "content_min": 0.03,
+  "media_upgrade": 0.25,
+  "unsupported_min_device": 0.6,
+  "catalog_virtual": true,
+  "lang_temperature": {},
+  "lang_type_temperature": {},
+  "lang_exec_prob": {}
+}

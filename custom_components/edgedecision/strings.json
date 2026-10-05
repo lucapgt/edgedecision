@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "EdgeDecision",
+        "description": "Local voice-command engine (EdgeDecision add-on). The address is filled in automatically when the add-on is running.",
+        "data": {
+          "url": "Add-on address",
+          "fallback_agent": "Agent for sentences EdgeDecision cannot handle (conditions, questions, chit-chat)",
+          "model": "Model",
+          "execute": "Execute the commands (off = only decide and answer)"
+        }
+      }
+    },
+    "error": {"cannot_connect": "The EdgeDecision add-on does not answer at this address. Is it started, in mode homeassistant?"},
+    "abort": {"single_instance_allowed": "EdgeDecision is already configured."}
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "EdgeDecision",
+        "data": {
+          "url": "Add-on address",
+          "fallback_agent": "Agent for sentences EdgeDecision cannot handle (conditions, questions, chit-chat)",
+          "model": "Model",
+          "execute": "Execute the commands (off = only decide and answer)"
+        }
+      }
+    },
+    "error": {"cannot_connect": "The EdgeDecision add-on does not answer at this address."}
+  }
+}

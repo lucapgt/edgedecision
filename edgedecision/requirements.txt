@@ -1,0 +1,7 @@
+onnxruntime>=1.17
+tokenizers>=0.15
+numpy>=1.24
+requests>=2.28
+websocket-client>=1.6
+PyYAML>=6.0
+num2words>=0.5.13

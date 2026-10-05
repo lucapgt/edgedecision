@@ -1,0 +1,44 @@
+configuration:
+  chunk_ms:
+    name: Block size (ms)
+    description: >-
+      Model variant. 560 ms is the default; 1120 ms needs less CPU. Both process audio while you speak.
+  language:
+    name: Default language
+    description: >-
+      Used only when Home Assistant does not send a language. Normally the language of the Assist
+      pipeline is used. "auto" lets the model detect the language.
+  threads:
+    name: CPU threads
+    description: Number of CPU threads used for recognition.
+  lead_padding_ms:
+    name: Leading silence (ms)
+    description: Silence added before the audio so that a first word spoken immediately is not lost.
+  tail_padding_ms:
+    name: Minimum trailing silence (ms)
+    description: >-
+      Minimum silence added after the audio. The server adds more automatically until the last
+      word has been processed.
+  model_dir:
+    name: Custom model folder
+    description: >-
+      Optional path to another sherpa-onnx export of the same model, e.g. under /share. Leave
+      empty to use the official model, downloaded on first start.
+  log_transcripts:
+    name: Log transcripts
+    description: Write the recognized text to the add-on log. When off, only its length is logged.
+  save_audio:
+    name: Save audio
+    description: >-
+      Save every request as WAV + JSON in /share/edgestt/recordings. Off by default for privacy;
+      enable only temporarily for troubleshooting.
+  blank_penalty:
+    name: Blank penalty
+    description: >-
+      Values around 0.5-2 make empty transcripts of very short answers less likely, at the cost of
+      occasional extra words. 0 = model default.
+  debug:
+    name: Debug logging
+    description: Verbose log output.
+network:
+  10300/tcp: Wyoming speech-to-text
