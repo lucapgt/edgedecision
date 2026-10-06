@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.2 (integration)
+
+- Fix an uncaught `KeyError: 'alarm_at'` when asking about a configured alarm (for example, "C'è una sveglia
+  impostata?"). Move the alarm-status reply from the time-unit table to the reply table in all nine languages.
+- Add regression coverage for alarm status, no timers, regular timers and paused timers. The add-ons remain
+  at 1.0.1; this fix is in the HACS integration.
+
 ## 1.0.1
 
 - The integration now finds the EdgeDecision add-on by itself. In 1.0.0 it proposed `http://local-edgedecision:8765`,
