@@ -1,5 +1,5 @@
 name: EdgeSTT
-version: "1.0.0"
+version: "1.0.1"
 slug: edgestt
 description: Local streaming speech-to-text for Assist (NVIDIA Nemotron 3.5 ASR, Wyoming), 9 languages
 url: https://github.com/Lucapgt/edgedecision

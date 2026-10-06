@@ -1,5 +1,5 @@
 name: EdgeDecision
-version: "1.0.0"
+version: "1.0.1"
 slug: edgedecision
 url: https://github.com/Lucapgt/edgedecision
 description: Local decision engine for Assist (9 languages, no fixed phrases, Raspberry Pi 5 friendly)

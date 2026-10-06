@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1
+
+- Align the add-on version and Wyoming version announcement with EdgeDecision and its integration 1.0.1.
+- Update the documented startup log to match. Recognition behavior and the model are unchanged.
+
 ## 1.0.0
 
 First public release, published together with EdgeDecision.

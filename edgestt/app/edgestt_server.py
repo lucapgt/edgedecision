@@ -36,7 +36,7 @@ from wyoming.event import Event
 from wyoming.info import AsrModel, AsrProgram, Attribution, Describe, Info
 from wyoming.server import AsyncEventHandler, AsyncServer
 
-VERSION = "1.0.0"
+VERSION = "1.0.1"
 SAMPLE_RATE = 16000
 RELEASE = "https://github.com/k2-fsa/sherpa-onnx/releases/download/asr-models/"
 OFFICIAL = {

@@ -78,7 +78,7 @@ Voice PE → EdgeSTT → EdgeDecision → Piper, where everything runs locally.
 At start-up:
 
 ```
-EdgeSTT 1.0.0: model nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11 (0.56 s blocks), leading silence 300 ms / minimum trailing silence 300 ms, default language it, blank_penalty 0.0
+EdgeSTT 1.0.1: model nemotron-3.5-asr-streaming-0.6b-560ms-int8-2026-06-11 (0.56 s blocks), leading silence 300 ms / minimum trailing silence 300 ms, default language it, blank_penalty 0.0
 Listening on tcp://0.0.0.0:10300
 ```
 
