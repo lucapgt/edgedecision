@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "EdgeDecision",
-        "description": "Local voice-command engine (EdgeDecision add-on). The address is filled in automatically when the add-on is running.",
+        "description": "Local voice-command engine (EdgeDecision add-on). The address is found automatically when the add-on is running. If it is not: http://<add-on host name>:8765, usually http://a974f757-edgedecision:8765 (the host name is shown on the add-on page, or take the code in its web address and replace \"_\" with \"-\").",
         "data": {
           "url": "Add-on address",
           "fallback_agent": "Agent for sentences EdgeDecision cannot handle (conditions, questions, chit-chat)",
@@ -12,8 +12,12 @@
         }
       }
     },
-    "error": {"cannot_connect": "The EdgeDecision add-on does not answer at this address. Is it started, in mode homeassistant?"},
-    "abort": {"single_instance_allowed": "EdgeDecision is already configured."}
+    "error": {
+      "cannot_connect": "The EdgeDecision add-on does not answer at this address. Is it started, in mode homeassistant? Usually the address is http://a974f757-edgedecision:8765."
+    },
+    "abort": {
+      "single_instance_allowed": "EdgeDecision is already configured."
+    }
   },
   "options": {
     "step": {
@@ -27,6 +31,8 @@
         }
       }
     },
-    "error": {"cannot_connect": "The EdgeDecision add-on does not answer at this address."}
+    "error": {
+      "cannot_connect": "The EdgeDecision add-on does not answer at this address. Is it started, in mode homeassistant? Usually the address is http://a974f757-edgedecision:8765."
+    }
   }
 }

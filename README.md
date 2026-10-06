@@ -105,6 +105,8 @@ You need Home Assistant OS or Supervised (for the add-ons) and a text-to-speech 
 2. **Integration**: in HACS → ⋮ → Custom repositories → add `https://github.com/Lucapgt/edgedecision` (type *Integration*) →
    install **EdgeDecision**, restart Home Assistant, then Settings → Devices & services → Add integration →
    EdgeDecision.
+   The add-on address is found automatically (it is `http://a974f757-edgedecision:8765`; HACS itself must be installed
+   first: see [hacs.xyz](https://www.hacs.xyz/docs/use/download/download/)).
 3. **Assist**: Settings → Voice assistants → your assistant → *Speech-to-text*: **EdgeSTT**, *Conversation agent*:
    **EdgeDecision**, language = the language you speak. Choose a
    fallback agent in the integration options (e.g. *Home Assistant*): it receives what EdgeDecision passes on.

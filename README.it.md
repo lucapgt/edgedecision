@@ -106,6 +106,8 @@ Serve Home Assistant OS o Supervised (per gli add-on) e una sintesi vocale per A
 2. **Integrazione**: in HACS → ⋮ → Repository personalizzati → aggiungi `https://github.com/Lucapgt/edgedecision` (tipo
    *Integrazione*) → installa **EdgeDecision**, riavvia Home Assistant, poi Impostazioni → Dispositivi e servizi →
    Aggiungi integrazione → EdgeDecision.
+   L'indirizzo dell'add-on viene trovato da solo (è `http://a974f757-edgedecision:8765`; prima va installato HACS:
+   vedi [hacs.xyz](https://www.hacs.xyz/docs/use/download/download/)).
 3. **Assist**: Impostazioni → Assistenti vocali → il tuo assistente → *Riconoscimento vocale*: **EdgeSTT**,
    *Agente di conversazione*: **EdgeDecision**, lingua = quella che parli.
    Nelle opzioni dell'integrazione scegli un agente di riserva (per esempio *Home Assistant*): riceve quello che

@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "EdgeDecision",
-        "description": "Motore locale per i comandi vocali (add-on EdgeDecision). L'indirizzo viene compilato da solo se l'add-on è avviato.",
+        "description": "Motore locale per i comandi vocali (add-on EdgeDecision). L'indirizzo viene trovato da solo se l'add-on è avviato. Altrimenti: http://<nome host dell'add-on>:8765, di solito http://a974f757-edgedecision:8765 (il nome host è nella pagina dell'add-on, oppure prendi il codice nel suo indirizzo web e sostituisci \"_\" con \"-\").",
         "data": {
           "url": "Indirizzo dell'add-on",
           "fallback_agent": "Agente per le frasi che EdgeDecision non gestisce (condizioni, domande, chiacchiere)",
@@ -13,7 +13,7 @@
       }
     },
     "error": {
-      "cannot_connect": "L'add-on EdgeDecision non risponde a questo indirizzo. È avviato in modalità homeassistant?"
+      "cannot_connect": "L'add-on EdgeDecision non risponde a questo indirizzo. È avviato in modalità homeassistant? Di solito l'indirizzo è http://a974f757-edgedecision:8765."
     },
     "abort": {
       "single_instance_allowed": "EdgeDecision è già configurato."
@@ -32,7 +32,7 @@
       }
     },
     "error": {
-      "cannot_connect": "L'add-on EdgeDecision non risponde a questo indirizzo."
+      "cannot_connect": "L'add-on EdgeDecision non risponde a questo indirizzo. È avviato in modalità homeassistant? Di solito l'indirizzo è http://a974f757-edgedecision:8765."
     }
   }
 }
