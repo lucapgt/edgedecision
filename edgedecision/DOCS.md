@@ -10,8 +10,8 @@ fast enough for a Raspberry Pi 5.
    in your house is controlled).
 2. Set **mode** to `homeassistant` and restart: the add-on reads the entities exposed to Assist, their rooms, floors
    and aliases. New, renamed or moved devices are picked up within a minute.
-3. Install the **EdgeDecision integration** (HACS, same repository) and choose *EdgeDecision* as the conversation agent
-   of your Assist pipeline. Pick a fallback agent in the integration options (e.g. *Home Assistant*): it receives the
+3. Install the **EdgeDecision integration** (HACS, same repository; it finds the add-on by itself at
+   `http://a974f757-edgedecision:8765`) and choose *EdgeDecision* as the conversation agent of your Assist pipeline. Pick a fallback agent in the integration options (e.g. *Home Assistant*): it receives the
    requests EdgeDecision passes on (chit-chat, complex conditions, questions about the world).
 
 ## Options

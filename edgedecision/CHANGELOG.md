@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.1 (integration)
+
+- The integration now finds the EdgeDecision add-on by itself. In 1.0.0 it proposed `http://local-edgedecision:8765`,
+  which only works for a local copy of the add-on: when installed from this repository the address is
+  `http://a974f757-edgedecision:8765`. An integration already configured with a wrong address fixes itself at the
+  next start of Home Assistant.
+- The add-ons are unchanged (EdgeDecision 1.0.0, EdgeSTT 1.0.0): no rebuild needed.
+
 ## 1.0.0
 
-First public release: model 7c (6 layers, INT8, 9 languages).
+First public release: EdgeDecision model 7c (6 layers, INT8, 9 languages), EdgeSTT with NVIDIA Nemotron 3.5 ASR
+Streaming, EdgeDecision integration for Assist.
