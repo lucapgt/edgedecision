@@ -112,6 +112,8 @@ You need Home Assistant OS or Supervised (for the add-ons) and a text-to-speech 
    fallback agent in the integration options (e.g. *Home Assistant*): it receives what EdgeDecision passes on.
 4. Expose to Assist the devices you want to control (Settings → Voice assistants → Expose).
 
+No add-on store (Home Assistant Container / Core)? See [Docker (experimental)](docs/DOCKER.md).
+
 Add-on options: `model`, `threads` (Pi 5: 4), `lang` (default reply language; Assist sends its own), `expose_all`,
 `allow_off_all` ("turn everything off" really switches off the house; off by default), `save_history` (keep a log of
 decisions in `/share/edgedecision/history.jsonl`; off by default).

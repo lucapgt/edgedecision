@@ -114,6 +114,8 @@ Serve Home Assistant OS o Supervised (per gli add-on) e una sintesi vocale per A
    EdgeDecision passa oltre.
 4. Esponi ad Assist i dispositivi che vuoi comandare (Impostazioni → Assistenti vocali → Esponi).
 
+Niente store degli add-on (Home Assistant Container / Core)? Vedi [Docker (sperimentale)](docs/DOCKER.it.md).
+
 Opzioni dell'add-on: `model`, `threads` (Pi 5: 4), `lang` (lingua predefinita delle risposte; Assist manda la sua),
 `expose_all`, `allow_off_all` ("spegni tutto" spegne davvero la casa; spento di default), `save_history` (salva le
 decisioni in `/share/edgedecision/history.jsonl`; spento di default).

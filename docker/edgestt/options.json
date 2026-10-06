@@ -1,0 +1,12 @@
+{
+  "chunk_ms": 560,
+  "language": "it",
+  "threads": 4,
+  "lead_padding_ms": 300,
+  "tail_padding_ms": 300,
+  "model_dir": "",
+  "log_transcripts": true,
+  "save_audio": false,
+  "blank_penalty": 0,
+  "debug": false
+}

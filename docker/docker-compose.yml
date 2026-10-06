@@ -1,0 +1,31 @@
+# EdgeDecision + EdgeSTT without the Supervisor (Home Assistant Container / Core, e.g. Raspberry Pi OS + Docker).
+# EXPERIMENTAL: see ../docs/DOCKER.md. Run from this folder:
+#   cp .env.example .env      (then put your Home Assistant token in .env)
+#   docker compose up -d --build
+# Both services listen only on 127.0.0.1 (this computer): Home Assistant must run on the same computer with
+# network_mode: host (the usual set-up). Nothing is exposed to the rest of your network.
+services:
+  edgestt:
+    build: ../edgestt
+    container_name: edgestt
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:10300:10300"          # Wyoming speech-to-text
+    volumes:
+      - ./edgestt:/data                 # options.json + the speech model (~475 MB, downloaded at first start)
+
+  edgedecision:
+    build: ../edgedecision
+    container_name: edgedecision
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8765:8765"           # decision API used by the EdgeDecision integration
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      EDGE_HA_URL: ${HA_URL:-http://host.docker.internal:8123}
+      EDGE_HA_WS: ${HA_WS:-ws://host.docker.internal:8123/api/websocket}
+      EDGE_HA_TOKEN: ${HA_TOKEN:?put your Home Assistant long-lived access token in .env}
+    volumes:
+      - ./edgedecision/options.json:/data/options.json:ro
+      - ./share:/share                  # history.jsonl, only if save_history is true

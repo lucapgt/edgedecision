@@ -1,0 +1,9 @@
+{
+  "mode": "homeassistant",
+  "model": "7c",
+  "threads": 4,
+  "lang": "it",
+  "expose_all": false,
+  "allow_off_all": false,
+  "save_history": false
+}
